@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox layoutX="300.0" prefHeight="350.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(to left bottom, #184974, #1b588d, #1e68a7, #2278c2, #2788dd);;" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="300.0" text="INTERNATIONAL COMMUNIST BANK" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="AboutUs" prefHeight="70.0" prefWidth="300.0" text="ABOUT US" textFill="#fafafa">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="CreateButton" onAction="#CreateAccount" prefHeight="70.0" prefWidth="300.0" text="CREATE ACCOUNT" textFill="#fafafa">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ForgotButton" onAction="#ForgotPassword" prefHeight="70.0" prefWidth="300.0" text="FORGOT PASSWORD" textFill="#fafafa">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children></VBox>
+      <HBox layoutY="350.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to right, #184974, #134f83, #0e5692, #0a5ca1, #0962b0);;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="Login_status" prefHeight="50.0" prefWidth="300.0" text="Login Status : none" textFill="#fafafa">
+               <font>
+                  <Font name="Roboto Light" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label fx:id="Driver_status" alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="300.0" text="Driver Status : Unknown" textFill="#fafafa" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Roboto Light" size="15.0" />
+               </font>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </Label>
+         </children></HBox>
+      <VBox prefHeight="350.0" prefWidth="300.0" style="-fx-background-color: #fafafa;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="BOTTOM_LEFT" prefHeight="52.0" prefWidth="280.0" text="SIGN IN">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="UserField" alignment="BOTTOM_LEFT" focusColor="#0cabdf" prefHeight="54.0" prefWidth="260.0" promptText="Username">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" right="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </JFXTextField>
+            <JFXPasswordField fx:id="PassField" focusColor="#1dacc2" prefHeight="54.0" prefWidth="300.0" promptText="Password">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <HBox prefHeight="72.0" prefWidth="300.0">
+               <children>
+                  <JFXRadioButton fx:id="customerRadio" prefHeight="22.0" prefWidth="90.0" selected="true" text="Customer">
+                     <selectedColor>
+                        <Color red="0.11372549086809158" green="0.6745098233222961" blue="0.7607843279838562" />
+                     </selectedColor>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="40.0" />
+                     </HBox.margin>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="managerRadio" prefHeight="23.0" prefWidth="95.0" text="Employee">
+                     <HBox.margin>
+                        <Insets left="20.0" top="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <selectedColor>
+                        <Color red="0.11372549086809158" green="0.6745098233222961" blue="0.7607843279838562" />
+                     </selectedColor>
+                  </JFXRadioButton>
+               </children>
+            </HBox>
+            <JFXButton fx:id="LoginButton" onAction="#Login" prefHeight="51.0" prefWidth="144.0" style="-fx-background-color: linear-gradient(to right, #184974, #134f83, #0e5692, #0a5ca1, #0962b0);;" text="LOGIN" textFill="#fafafa">
+               <VBox.margin>
+                  <Insets left="70.0" top="20.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children></VBox>
+   </children>
+</AnchorPane>

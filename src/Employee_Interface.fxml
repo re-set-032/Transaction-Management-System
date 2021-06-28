@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="854.0" style="-fx-background-color: linear-gradient(to left bottom, #184974, #1b588d, #1e68a7, #2278c2, #2788dd);" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Einterface_Controller">
+   <children>
+      <TabPane prefHeight="545.0" prefWidth="855.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <tabs>
+            <Tab style="-fx-font-weight: bold;" text="Customer Details">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableView" layoutY="100.0" prefHeight="360.0" prefWidth="855.0">
+                           <columns>
+                              <TableColumn fx:id="S_no" prefWidth="48.79998701810837" text="S.NO" />
+                              <TableColumn fx:id="cid" prefWidth="111.20004653930664" text="Customer ID" />
+                              <TableColumn fx:id="name" prefWidth="126.40000915527344" text="Name" />
+                              <TableColumn fx:id="accountNum" prefWidth="125.5999755859375" text="Account number" />
+                              <TableColumn fx:id="accountType" prefWidth="118.39996337890625" text="Account type" />
+                              <TableColumn fx:id="balance" prefWidth="108.800048828125" text="Balance" />
+                              <TableColumn fx:id="email" prefWidth="99.199951171875" text="Email" />
+                              <TableColumn fx:id="contact" prefWidth="113.5999755859375" text="Contact number" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="17.0" layoutY="73.0" prefHeight="18.0" prefWidth="146.0" text="Customer Details" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="customerIDField" layoutX="23.0" layoutY="27.0" promptText="Customer ID " style="-fx-text-fill: #fafafa; -fx-prompt-text-fill: #fafafa;" unFocusColor="#fafafa" />
+                        <JFXButton fx:id="searchButton" layoutX="218.0" layoutY="27.0" prefHeight="26.0" prefWidth="178.0" style="-fx-border-color: #fafafa;" text="Search Accounts" textFill="#fafafa">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="showAllButton" layoutX="452.0" layoutY="474.0" prefHeight="32.0" prefWidth="178.0" style="-fx-border-color: #fafafa;" text="Show All Accounts" textFill="#fafafa">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="clearButton" layoutX="669.0" layoutY="474.0" prefHeight="36.0" prefWidth="147.0" style="-fx-border-color: #fafafa;" text="Clear" textFill="#fafafa">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-font-weight: bold;" text="Manager Info">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="536.0" prefWidth="892.0">
+                     <children>
+                        <VBox layoutX="52.0" layoutY="78.0" prefHeight="357.0" prefWidth="276.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="10.0" prefWidth="276.0" text="Name" textFill="WHITE">
+                                 <font>
+                                    <Font name="Source Serif Pro Semibold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="eName" alignment="CENTER" prefHeight="19.0" prefWidth="293.0" text="Some Rao" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="20.0" prefWidth="356.0" text="Gender" textFill="WHITE">
+                                 <font>
+                                    <Font name="Source Serif Pro Semibold" size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="eGender" alignment="CENTER" prefHeight="19.0" prefWidth="310.0" text="Male" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="20.0" prefWidth="314.0" text="Date of Birth" textFill="WHITE">
+                                 <font>
+                                    <Font name="Source Serif Pro Semibold" size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="eDOB" alignment="CENTER" prefHeight="19.0" prefWidth="310.0" text="DD/MM/YYYY" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="20.0" prefWidth="291.0" text="Email" textFill="WHITE">
+                                 <font>
+                                    <Font name="Source Serif Pro Semibold" size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="idEmail" alignment="CENTER" editable="false" style="-fx-text-fill: white; -fx-background-color: transparent;" text="abc@xyz.com">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </TextField>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="188.0" prefHeight="20.0" prefWidth="270.0" text="Contact number" textFill="WHITE">
+                                 <font>
+                                    <Font name="Source Serif Pro Semibold" size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="idContact" alignment="CENTER" editable="false" style="-fx-text-fill: white; -fx-background-color: transparent;" text="98XXXXXXXXX">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="594.0" layoutY="257.0" prefHeight="138.0" prefWidth="146.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="24.0" prefWidth="153.0" text="Employee ID" textFill="WHITE">
+                                 <font>
+                                    <Font name="Source Serif Pro" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="eID" alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="ABCDEF123" textFill="WHITE">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="170.0" fitWidth="233.0" layoutX="582.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Employee.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="editButton" layoutX="130.0" layoutY="449.0" prefHeight="46.0" prefWidth="119.0" style="-fx-border-color: #fafafa;" text="Edit Profile" textFill="#fafafa">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="saveButton" layoutX="605.0" layoutY="449.0" prefHeight="46.0" prefWidth="124.0" style="-fx-border-color: #fafafa;" text="Save Profile" textFill="#fafafa">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="115.0" layoutY="14.0" text="Dashboard" textFill="#fafafa">
+                           <font>
+                              <Font name="System Bold" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Label alignment="CENTER" layoutX="413.0" prefHeight="46.0" prefWidth="854.0" text="Employee Interface" textFill="#fafafa" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

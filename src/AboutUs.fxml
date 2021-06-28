@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="587.0" prefWidth="873.0" style="-fx-background-color: linear-gradient(to right top, #184974, #134f83, #0e5692, #0a5ca1, #0962b0);" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.About_Controller">
+   <children>
+      <Label fx:id="AboutLabel" alignment="CENTER" layoutY="7.0" prefHeight="55.0" prefWidth="737.0" text="ABOUT US" textFill="#fafafa" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="Body" editable="false" focusColor="#fafafa" layoutY="201.0" prefHeight="516.0" prefWidth="873.0" style="-fx-text-fill: #fafafa;" text="ICB was established under the visionary leadership of Prof. Kahul Rala and Prof. VM Oyas with a vision to provide each and every living being on this planet with state of the art banking services without the problems of a capitalistic organization.&#10;Today ICB has expanded to more than 196 countries worldwide with more than a million branches and a market capitalization of 800.7 biliion USD and is a market leader in banking and financial services sector worldwide.&#10;The ICB is trusted by billions of customers, thousands of corporations and hundreds of countries.&#10;Our customers put their valuabe trust in us which has been nurtured by years of faithful service. More than 90% of big organizations and startups rely on our banking services and funding.&#10;Countries around the globe rely on us for the funding of their development projects and we have replaced International Monetary Fund from its existence as the most preferred financial development partner.&#10;ICB has helped children in Africa and other Under developed countries to realise their full potential and has been involved in quality of life improvements for biliions of people. Our major partners NASA,Google,World Bank." unFocusColor="#fafafa" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>
