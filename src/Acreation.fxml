@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to left, #184974, #134f83, #0e5692, #0a5ca1, #0962b0);" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Account_Creation_Controller">
+
+   <top>
+      <VBox prefHeight="41.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="53.0" prefWidth="600.0" text="Create Account" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <TabPane prefHeight="587.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to left, #184974, #134f83, #0e5692, #0a5ca1, #0962b0);;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab style="-fx-font-weight: bold;" text="Customer Account">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="560.0" prefWidth="600.0">
+                     <children>
+                        <GridPane layoutY="-1.0" prefHeight="607.0" prefWidth="600.0" style="-fx-text-fill: #fafafa;">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="310.0" minWidth="10.0" prefWidth="175.8" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="488.6" minWidth="10.0" prefWidth="423.8" />
+                              <ColumnConstraints maxWidth="244.60000000000002" minWidth="0.0" prefWidth="0.0" />
+                              <ColumnConstraints maxWidth="290.6" minWidth="0.0" prefWidth="0.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="105.2" minHeight="10.0" prefHeight="29.199992752075197" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="105.2" minHeight="10.0" prefHeight="33.79999694824219" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="433.59998474121096" minHeight="0.0" prefHeight="41.80000305175781" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="391.2" minHeight="0.0" prefHeight="36.99998931884767" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="234.8" minHeight="0.0" prefHeight="37.599993896484364" />
+                              <RowConstraints maxHeight="289.4" minHeight="0.0" prefHeight="38.399987792968744" />
+                              <RowConstraints maxHeight="261.79999999999995" minHeight="0.0" prefHeight="49.60001220703123" />
+                              <RowConstraints maxHeight="210.39999999999998" minHeight="0.0" prefHeight="45.39999999999998" />
+                              <RowConstraints maxHeight="161.2" minHeight="0.0" prefHeight="35.39999999999998" />
+                              <RowConstraints maxHeight="147.9999938964844" minHeight="11.399999999999977" prefHeight="40.20001220703125" />
+                              <RowConstraints maxHeight="158.19997558593752" minHeight="0.0" prefHeight="48.0000061035156" />
+                              <RowConstraints maxHeight="160.59998779296876" minHeight="10.399999999999977" prefHeight="42.20002441406251" />
+                              <RowConstraints maxHeight="135.59998779296876" minHeight="10.399999999999977" prefHeight="60.1999572753906" />
+                              <RowConstraints maxHeight="117.79999999999995" minHeight="10.399999999999977" prefHeight="38.79995117187502" />
+                              <RowConstraints maxHeight="117.79999999999995" minHeight="10.399999999999977" prefHeight="50.000048828125045" />
+                          </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="156.0" text="First Name " textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="24.0" prefWidth="211.0" text="Middle name " textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="26.0" prefWidth="211.0" text="Last name " textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="26.0" prefWidth="209.0" text="Password" textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="26.0" prefWidth="210.0" text="Username" textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="26.0" prefWidth="206.0" text="Confirm Password" textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="27.0" prefWidth="208.0" text="Date of Birth" textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="28.0" prefWidth="209.0" text="Gender" textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="27.0" prefWidth="209.0" text="Email" textFill="#fafafa" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="24.0" prefWidth="209.0" text="Contact number" textFill="#fafafa" GridPane.rowIndex="10">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                 <children>
+                                    <JFXRadioButton fx:id="C_gender_male" prefHeight="48.0" prefWidth="94.0" selected="true" style="-fx-text-fill: #fafafa;" text="Male">
+                                       <HBox.margin>
+                                          <Insets right="30.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <selectedColor>
+                                          <Color red="0.08276315778493881" green="0.8763157725334167" blue="0.8498640060424805" />
+                                       </selectedColor>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton fx:id="C_gender_female" prefHeight="54.0" prefWidth="94.0" style="-fx-text-fill: #fafafa;" text="Female">
+                                       <HBox.margin>
+                                          <Insets right="30.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <selectedColor>
+                                          <Color red="0.08276315778493881" green="0.8763157725334167" blue="0.8498640060424805" />
+                                       </selectedColor>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton fx:id="C_gender_others" prefHeight="59.0" prefWidth="94.0" style="-fx-text-fill: #fafafa;" text="Others">
+                                       <HBox.margin>
+                                          <Insets right="30.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <selectedColor>
+                                          <Color red="0.08276315778493881" green="0.8763157725334167" blue="0.8498640060424805" />
+                                       </selectedColor>
+                                    </JFXRadioButton>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="ResultBox" alignment="CENTER" prefHeight="18.0" prefWidth="184.0" text="Result here" textFill="#fafafa" GridPane.rowIndex="14">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="C_createButton" onAction="#Create_Customer" prefHeight="38.0" prefWidth="162.0" style="-fx-border-color: #fafafa;" text=" CREATE ACCOUNT NOW" textFill="#fafafa" GridPane.columnIndex="1" GridPane.rowIndex="14">
+                                 <GridPane.margin>
+                                    <Insets left="130.0" />
+                                 </GridPane.margin>
+                              </JFXButton>
+                              <JFXTextField fx:id="C_first_name_TF" focusColor="#0eafd7" promptText="Enter your First Name" style="-fx-prompt-text-fill: #fafafa; -fx-text-fill: #fafafa;" unFocusColor="#fafafa" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXTextField>
+                              <JFXTextField fx:id="C_middle_name_TF" focusColor="#0eafd7" promptText="Enter your Middle Name" style="-fx-prompt-text-fill: #fafafa; -fx-text-fill: #fafafa;" unFocusColor="#fafafa" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXTextField>
+                              <JFXTextField fx:id="C_last_name_TF" focusColor="#0eafd7" promptText="Enter your Last Name" style="-fx-prompt-text-fill: #fafafa; -fx-text-fill: #fafafa;" unFocusColor="#fafafa" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXTextField>
+                              <JFXTextField fx:id="C_username_TF" focusColor="#0eafd7" promptText="Enter Username" style="-fx-prompt-text-fill: #fafafa; -fx-text-fill: #fafafa;" unFocusColor="#fafafa" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXTextField>
+                              <JFXTextField fx:id="C_email_TF" focusColor="#09c5e0" promptText="Enter your Email address" style="-fx-prompt-text-fill: #fafafa; -fx-text-fill: #fafafa;" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXTextField>
+                              <JFXTextField fx:id="C_contact_no_TF" focusColor="#09c5e0" promptText="Enter your Contact Number" style="-fx-prompt-text-fill: #fafafa; -fx-text-fill: #fafafa;" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXTextField>
+                              <JFXPasswordField fx:id="C_password_TF" focusColor="#11aae2" promptText="Enter your Password " style="-fx-prompt-text-fill: #fafafa; -fx-text-fill: #fafafa;" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXPasswordField>
+                              <JFXPasswordField fx:id="C_confirmpassword_TF" focusColor="#11aae2" prefHeight="26.0" prefWidth="393.0" promptText="Confirm your Password Again" style="-fx-prompt-text-fill: #fafafa; -fx-text-fill: #fafafa;" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXPasswordField>
+                              <DatePicker fx:id="C_DOB_DP" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <Label alignment="CENTER" prefHeight="18.0" prefWidth="190.0" text="Security Question" textFill="#fafafa" GridPane.rowIndex="11">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="CsecurityQuestionList" onAction="#comboListener" prefHeight="26.0" prefWidth="367.0" promptText="Select Security Question from here" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                              <Label alignment="CENTER" prefHeight="26.0" prefWidth="191.0" text="Answer" textFill="#fafafa" GridPane.rowIndex="12">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <JFXCheckBox fx:id="CvalidityAgreement" checkedColor="#13c73a" prefHeight="18.0" prefWidth="444.0" style="-fx-text-fill: #fafafa;" text="I hereby declare that the information here is legit and correct" unCheckedColor="#fffefe" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                              <JFXTextField fx:id="CsecurityAnswer" focusColor="#09c5e0" promptText="Enter your answer here" style="-fx-text-fill: #fafafa; -fx-prompt-text-fill: #fafafa;" unFocusColor="#fafafa" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin>
+                              </JFXTextField>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab style="-fx-font-weight: bold;" text="Employee Account">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="588.0" prefWidth="600.0">
+                     <children>
+                        <GridPane layoutX="-4.0" layoutY="14.0" prefHeight="592.0" prefWidth="608.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="310.0" minWidth="10.0" prefWidth="188.6" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="488.6" minWidth="10.0" prefWidth="411.0" />
+                              <ColumnConstraints maxWidth="244.60000000000002" minWidth="0.0" prefWidth="0.0" />
+                              <ColumnConstraints maxWidth="290.6" minWidth="7.7999999999999545" prefWidth="7.7999999999999545" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="94.4" minHeight="2.6000019073486342" prefHeight="37.6" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="94.4" minHeight="6.399999999999995" prefHeight="44.8" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="433.59998474121096" minHeight="0.0" prefHeight="45.20000762939455" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="391.2" minHeight="0.8000152587890739" prefHeight="46.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="234.8" minHeight="0.0" prefHeight="43.0" />
+                              <RowConstraints maxHeight="289.4" minHeight="0.0" prefHeight="41.60000000000002" />
+                              <RowConstraints maxHeight="261.79999999999995" minHeight="0.0" prefHeight="41.19999999999999" />
+                              <RowConstraints maxHeight="210.39999999999998" minHeight="0.0" prefHeight="31.4000244140625" />
+                              <RowConstraints maxHeight="161.2" minHeight="0.0" prefHeight="35.59998779296876" />
+                              <RowConstraints maxHeight="125.0" minHeight="11.399999999999977" prefHeight="36.60000000000002" />
+                              <RowConstraints maxHeight="99.0" minHeight="0.0" prefHeight="35.60000000000002" />
+                              <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="44.60001220703123" />
+                              <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="33.399987792968716" />
+                              <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="34.199963378906205" />
+                              <RowConstraints maxHeight="117.79999999999995" minHeight="10.399999999999977" prefHeight="46.20003662109377" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="28.0" prefWidth="189.0" text="First Name" textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="24.0" prefWidth="211.0" text="Middle name" textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="26.0" prefWidth="211.0" text="Last name" textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="26.0" prefWidth="209.0" text="Password" textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="26.0" prefWidth="210.0" text="Username" textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="26.0" prefWidth="206.0" text="Confirm Password" textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="27.0" prefWidth="208.0" text="Date of Birth" textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="28.0" prefWidth="209.0" text="Gender" textFill="#fafafa" GridPane.hgrow="ALWAYS" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="27.0" prefWidth="209.0" text="Email" textFill="#fafafa" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="24.0" prefWidth="209.0" text="Contact number" textFill="#fafafa" GridPane.rowIndex="10">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="18.0" prefWidth="192.0" text="Employee ID" textFill="#fafafa">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                 <children>
+                                    <JFXRadioButton fx:id="E_gender_male" prefHeight="43.0" prefWidth="94.0" selected="true" text="Male" textFill="#fafafa">
+                                       <HBox.margin>
+                                          <Insets right="30.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <selectedColor>
+                                          <Color red="0.11106725037097931" green="0.7346863746643066" blue="0.8447368144989014" />
+                                       </selectedColor>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton fx:id="E_gender_female" prefHeight="51.0" prefWidth="94.0" text="Female" textFill="#fafafa">
+                                       <HBox.margin>
+                                          <Insets right="30.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <selectedColor>
+                                          <Color red="0.11106725037097931" green="0.7346863746643066" blue="0.8447368144989014" />
+                                       </selectedColor>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton fx:id="E_gender_others" prefHeight="44.0" prefWidth="94.0" text="Others" textFill="#fafafa">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <selectedColor>
+                                          <Color red="0.11106725037097931" green="0.7346863746643066" blue="0.8447368144989014" />
+                                       </selectedColor>
+                                    </JFXRadioButton>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="ResultLabel" alignment="CENTER" prefHeight="18.0" prefWidth="200.0" text="Result here" textFill="#fafafa" GridPane.rowIndex="14">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="E_createButton" onAction="#Create_Employee" prefHeight="41.0" prefWidth="171.0" style="-fx-border-color: #fafafa;" text=" CREATE ACCOUNT NOW" textFill="#fafafa" GridPane.columnIndex="1" GridPane.rowIndex="14">
+                                 <GridPane.margin>
+                                    <Insets left="130.0" />
+                                 </GridPane.margin>
+                              </JFXButton>
+                              <JFXTextField fx:id="E_employeeID_TF" focusColor="#0bbbe5" promptText="Enter your Employee ID" style="-fx-text-fill: #fafafa; -fx-prompt-text-fill: #fafafa;" unFocusColor="WHITE" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXTextField>
+                              <JFXTextField fx:id="E_first_name_TF" focusColor="#0bbbe5" promptText="Enter your First Name" style="-fx-text-fill: #fafafa; -fx-prompt-text-fill: #fafafa;" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXTextField>
+                              <JFXTextField fx:id="E_middle_name_TF" focusColor="#0bbbe5" promptText="Enter your Middle Name" style="-fx-text-fill: #fafafa; -fx-prompt-text-fill: #fafafa;" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXTextField>
+                              <JFXTextField fx:id="E_last_name_TF" focusColor="#0bbbe5" promptText="Enter your Last Name" style="-fx-text-fill: #fafafa; -fx-prompt-text-fill: #fafafa;" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXTextField>
+                              <JFXTextField fx:id="E_username_TF" focusColor="#0bbbe5" promptText="Enter your Username" style="-fx-text-fill: #fafafa; -fx-prompt-text-fill: #fafafa;" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXTextField>
+                              <JFXPasswordField fx:id="E_password_TF" focusColor="#07a6f0" promptText="Enter your Password" style="-fx-text-fill: #fafafa; -fx-prompt-text-fill: #fafafa;" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXPasswordField>
+                              <JFXPasswordField fx:id="E_confirmpassword_TF" focusColor="#07a6f0" promptText="Confirm your Password Again" style="-fx-text-fill: #fafafa; -fx-prompt-text-fill: #fafafa;" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXPasswordField>
+                              <JFXTextField fx:id="E_email_TF" focusColor="#0bbbe5" promptText="Enter your Email address" style="-fx-text-fill: #fafafa; -fx-prompt-text-fill: #fafafa;" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXTextField>
+                              <JFXTextField fx:id="E_contact_no_TF" focusColor="#0bbbe5" promptText="Enter your Contact Number" style="-fx-text-fill: #fafafa; -fx-prompt-text-fill: #fafafa;" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin></JFXTextField>
+                              <DatePicker fx:id="E_DOB_DP" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <Label alignment="CENTER" prefHeight="18.0" prefWidth="190.0" text="Security Question" textFill="#fafafa" GridPane.rowIndex="11">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="18.0" prefWidth="190.0" text="Answer" textFill="#fafafa" GridPane.rowIndex="12">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="EsecurityAnswer" focusColor="#0bbbe5" promptText="Enter your answer here" style="-fx-text-fill: #fafafa; -fx-prompt-text-fill: #fafafa;" unFocusColor="#fafafa" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                                 <GridPane.margin>
+                                    <Insets right="100.0" />
+                                 </GridPane.margin>
+                              </JFXTextField>
+                              <ComboBox fx:id="EsecurityQuestionList" onAction="#comboListener" prefHeight="26.0" prefWidth="360.0" promptText="Select a Security question from here" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                              <JFXCheckBox fx:id="EvalidityAgreement" checkedColor="#13c73a" prefHeight="18.0" prefWidth="357.0" style="-fx-text-fill: #fafafa;" text="I hereby declare that the information here is legit and correct" unCheckedColor="#fafafa" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                           </children>
+                        </GridPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TabPane>
+   </center>
+</BorderPane>
