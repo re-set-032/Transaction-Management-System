@@ -1,6 +1,7 @@
 # Transaction-Management-System
 
 IDE used - IntelliJ
+Authors - Rithik Seth, Adarsh Abhijat, Priyatam Reddy Somagattu, Chandramani kumar 
 
 Instructions before you run the code: 
 
